@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: #292F36;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* FORM */
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid #292F36;
+  color: #292F36;
+  font-size: 22px;
+  font-family: "Jost", sans-serif;
+  padding: 0 0 13px 0;
+  outline: none;
+  width: 100%;
+}
+
+.form-input::placeholder {
+  color: #292F36;
+  opacity: 1; /* Firefox */
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2.5px;
+}
+
+p {
+  line-height: 150%;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+/* MAIN COLORS */
+.primary-background {
+  background-color: #0C70F2;
+}
+
+.primary-color {
+  color: #0C70F2;
+}
+
+.secondary-background {
+  background-color: #1D1D1D;
+}
+
+.secondary-color {
+  color: #1D1D1D;
+}
+
+.tertiary-background {
+  background-color: #F6F6F6;
+}
+
+.tertiary-color {
+  color: #F6F6F6;
+}
+
+.grey-1-color {
+  color: #4D5053;
+}
+
+/* GRID */
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  position: relative;
+  padding: 0 30px;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.al-end {
+  align-items: end;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.fd-column {
+    flex-direction: column;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: end;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .mobile-fd-column {
+    flex-direction: column;
+  }
+}
