@@ -1,6 +1,6 @@
 # Project Architecture DNC School (React + Vite)
 
-Link: https://projectarchitecturedncschoolbyandre.vercel.app/
+Link: https://pj-architecturebyag.vercel.app
 
 Obs.: Para fins demonstrativos(vercel.com).
 
