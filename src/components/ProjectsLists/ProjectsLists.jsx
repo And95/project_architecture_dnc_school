@@ -65,20 +65,17 @@ const ProjectsLists = () => {
   }, []);
 
   const handleFavProjects = (id) => {
-    setFavProject((prevFavProjects) => {
-      if (prevFavProjects.includes(id)) {
-        const filtedArray = prevFavProjects.filter(
-          (projectId) => projectId !== id
-        );
-        sessionStorage.setItem("favProjects", JSON.stringify(filtedArray));
-        return prevFavProjects.filter((projectId) => projectId !== id);
+    setFavProject((prev) => {
+      let updated;
+
+      if (prev.includes(id)) {
+        updated = prev.filter((projectId) => projectId !== id);
       } else {
-        sessionStorage.setItem(
-          "favProjects",
-          JSON.stringify([...prevFavProjects, id])
-        );
-        return [...prevFavProjects, id];
+        updated = [...prev, id];
       }
+
+      sessionStorage.setItem("favProjects", JSON.stringify(updated));
+      return updated;
     });
   };
 
